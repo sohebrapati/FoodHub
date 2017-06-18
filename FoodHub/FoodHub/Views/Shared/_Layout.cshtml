@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    @Styles.Render("~/bundles/css")
+</head>
+<body class="theme-white">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="javascript:void(0);">
+                    <svg viewBox="0 0 96 11" width="120px" height="16px" version="1.1" xmlns="http://www.w3.org/2000/svg" data-reactid="10">
+                        <title>UberEATS logo</title>
+                        <defs></defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                            <g id="UberEATS_logo_onblack" sketch:type="MSLayerGroup" transform="translate(0.000000, 1.000000)">
+                                <g id="XMLID_234_" fill="#000000" sketch:type="MSShapeGroup">
+                                    <path d="M7.53846154,0.423076923 L7.53846154,5.73076923 C7.53846154,7.5 6.76923077,8.23076923 4.92307692,8.23076923 C3.07692308,8.23076923 2.30769231,7.5 2.30769231,5.73076923 L2.30769231,0.192307692 L0.538461538,0.192307692 C0.423076923,0.192307692 0.307692308,0.307692308 0.307692308,0.423076923 L0.307692308,5.80769231 C0.307692308,8.76923077 2.19230769,9.80769231 4.92307692,9.80769231 C7.65384615,9.80769231 9.53846154,8.76923077 9.53846154,5.80769231 L9.53846154,0.192307692 L7.76923077,0.192307692 C7.65384615,0.192307692 7.53846154,0.269230769 7.53846154,0.423076923 L7.53846154,0.423076923 Z" id="XMLID_243_"></path>
+                                    <path d="M33.2692308,1.73076923 C33.4230769,1.73076923 33.5,1.69230769 33.5384615,1.57692308 L34.0384615,0.307692308 C34.0769231,0.230769231 34.0384615,0.192307692 33.9615385,0.192307692 L26.8076923,0.192307692 C26.1538462,0.192307692 25.8846154,0.384615385 25.8846154,0.846153846 L25.8846154,9.07692308 C25.8846154,9.46153846 26.0769231,9.65384615 26.5769231,9.65384615 L33.2307692,9.65384615 C33.3846154,9.65384615 33.4615385,9.61538462 33.5,9.5 L34,8.23076923 C34.0384615,8.15384615 34,8.11538462 33.9230769,8.11538462 L27.8461538,8.11538462 L27.8461538,6.42307692 C27.8461538,5.84615385 28.1538462,5.57692308 29.0384615,5.57692308 L31.6923077,5.57692308 C31.8461538,5.57692308 31.9230769,5.53846154 31.9615385,5.42307692 L32.4615385,4.19230769 C32.5,4.11538462 32.4615385,4.07692308 32.3846154,4.07692308 L27.8846154,4.07692308 L27.8846154,1.69230769 L33.2692308,1.69230769 L33.2692308,1.73076923 Z" id="XMLID_242_"></path>
+                                    <path d="M20.6923077,4.65384615 C21.4615385,4.23076923 21.7692308,3.5 21.7692308,2.57692308 C21.7692308,0.5 20.0769231,0.192307692 18.3076923,0.192307692 L14.2692308,0.192307692 C13.6153846,0.192307692 13.3461538,0.384615385 13.3461538,0.846153846 L13.3461538,9.07692308 C13.3461538,9.46153846 13.5384615,9.65384615 14.0384615,9.65384615 L19,9.65384615 C20.8846154,9.65384615 22.1923077,8.92307692 22.1923077,7.03846154 C22.2307692,5.88461538 21.7692308,4.92307692 20.6923077,4.65384615 L20.6923077,4.65384615 Z M15.3461538,1.69230769 L18.4615385,1.69230769 C19.5,1.69230769 19.8076923,2.07692308 19.8076923,2.88461538 C19.8076923,3.69230769 19.5,4.07692308 18.4615385,4.07692308 L15.3461538,4.07692308 L15.3461538,1.69230769 L15.3461538,1.69230769 Z M18.8461538,8.11538462 L15.3461538,8.11538462 L15.3461538,6.38461538 C15.3461538,5.80769231 15.6538462,5.53846154 16.5384615,5.53846154 L18.8461538,5.53846154 C19.9615385,5.53846154 20.2692308,5.96153846 20.2692308,6.84615385 C20.2692308,7.73076923 19.9615385,8.11538462 18.8461538,8.11538462 L18.8461538,8.11538462 Z" id="XMLID_238_"></path>
+                                    <path d="M46.4230769,9.5 L44.3076923,5.84615385 C45.3461538,5.57692308 46.2307692,4.88461538 46.2307692,3.11538462 C46.2307692,0.807692308 44.8076923,0.192307692 42.4615385,0.192307692 L38.4230769,0.192307692 C37.7692308,0.192307692 37.5,0.384615385 37.5,0.846153846 L37.5,9.42307692 C37.5,9.53846154 37.6153846,9.65384615 37.7307692,9.65384615 L39.4615385,9.65384615 L39.4615385,6.88461538 C39.4615385,6.30769231 39.7692308,6.03846154 40.6538462,6.03846154 L42.3846154,6.03846154 L44.3076923,9.5 C44.3846154,9.61538462 44.4230769,9.65384615 44.5769231,9.65384615 L46.3846154,9.65384615 C46.4615385,9.65384615 46.4615385,9.53846154 46.4230769,9.5 L46.4230769,9.5 Z M42.7307692,4.57692308 L39.4230769,4.57692308 L39.4230769,1.69230769 L42.7307692,1.69230769 C43.9615385,1.69230769 44.2307692,2.15384615 44.2307692,3.11538462 C44.2307692,4.11538462 43.9615385,4.57692308 42.7307692,4.57692308 L42.7307692,4.57692308 Z" id="XMLID_235_"></path>
+                                </g>
+                                <g id="XMLID_224_" transform="translate(53.846154, 0.000000)" stroke="#57AD56" stroke-width="0.25" fill="#57AD56" sketch:type="MSShapeGroup">
+                                    <path d="M7.30769231,8.80769231 L7.26923077,9.65384615 L0.269230769,9.65384615 L0.269230769,0.192307692 L7,0.192307692 L7.03846154,1.07692308 L1.23076923,1.07692308 L1.23076923,4.34615385 L6.23076923,4.34615385 L6.23076923,5.11538462 L1.23076923,5.11538462 L1.23076923,8.80769231 L7.30769231,8.80769231 L7.30769231,8.80769231 Z" id="XMLID_232_"></path>
+                                    <path d="M18.6923077,7.19230769 L13.1153846,7.19230769 L12.0384615,9.65384615 L11,9.65384615 L15.3846154,0.192307692 L16.5,0.192307692 L20.8461538,9.65384615 L19.7692308,9.65384615 L18.6923077,7.19230769 L18.6923077,7.19230769 Z M15.5,1.80769231 L13.4615385,6.38461538 L18.3076923,6.38461538 L16.3076923,1.80769231 L15.9230769,0.846153846 L15.8846154,0.846153846 L15.5,1.80769231 L15.5,1.80769231 Z" id="XMLID_229_"></path>
+                                    <path d="M27.7692308,1.07692308 L27.7692308,9.65384615 L26.8076923,9.65384615 L26.8076923,1.07692308 L23.2692308,1.07692308 L23.3076923,0.192307692 L31.3461538,0.192307692 L31.3461538,1.07692308 L27.7692308,1.07692308 L27.7692308,1.07692308 Z" id="XMLID_227_"></path>
+                                    <path d="M38.1923077,9.84615385 C36.8846154,9.84615385 35.8461538,9.53846154 35,9.03846154 L35.1538462,8.19230769 C36.0384615,8.69230769 37.0384615,9 38.2307692,9 C40,9 40.9230769,8.19230769 40.9230769,7.03846154 C40.9230769,4.53846154 35.1538462,5.84615385 35.1538462,2.61538462 C35.1538462,1.23076923 36.1923077,0 38.6153846,0 C39.7307692,0 40.7307692,0.192307692 41.5384615,0.576923077 L41.3846154,1.38461538 C40.5,1.03846154 39.6538462,0.846153846 38.6538462,0.846153846 C36.7692308,0.846153846 36.0769231,1.69230769 36.0769231,2.53846154 C36.0769231,4.92307692 41.8461538,3.57692308 41.8461538,6.96153846 C41.8076923,8.65384615 40.5769231,9.84615385 38.1923077,9.84615385 L38.1923077,9.84615385 Z" id="XMLID_225_"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="Search for restaurant or cuisine">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+        <div class="card-top-search hidden" id="search_top">
+            <div class="header " >
+                <h6>
+                    Top Categories 
+                </h6>
+                <div class="body">
+                    <div class="row list-unstyle  bg-white ">
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/Afghan_1.jpeg" class="img-responsive">
+                                <p style="position: absolute; top: 1em; right: 2em; width: 120px; padding: 4px; background-color: #fff; font-weight: bold; font-size: 11px;">
+                                    (text to appear at the top right of the image)
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/African_1.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/American_1.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/Bakery_1.jpg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/Bubble_Tea_1.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/Gluten_Free_1.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/Filipino_1.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/Halal_3.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header ">
+                <h6>
+                    More Categories
+                </h6>
+                <div class="body">
+                    <div class="row list-unstyle  bg-white ">
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/Afghan_1.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/African_1.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/American_1.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/Bakery_1.jpg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/Bubble_Tea_1.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/Gluten_Free_1.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/Filipino_1.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+                            <a href="javascript:void(0);" class="thumbnail">
+                                <img src="~/Resources/TopSearch/Halal_3.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            @RenderBody()
+        </div>
+    </section>
+
+    <footer class="bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-12 col-md-3">
+                    <svg viewBox="0 0 96 11" width="192px" height="22px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>UberEATS logo</title>
+                        <defs></defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                            <g id="UberEATS_logo_onblack" sketch:type="MSLayerGroup" transform="translate(0.000000, 1.000000)">
+                                <g id="XMLID_234_" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                                    <path d="M7.53846154,0.423076923 L7.53846154,5.73076923 C7.53846154,7.5 6.76923077,8.23076923 4.92307692,8.23076923 C3.07692308,8.23076923 2.30769231,7.5 2.30769231,5.73076923 L2.30769231,0.192307692 L0.538461538,0.192307692 C0.423076923,0.192307692 0.307692308,0.307692308 0.307692308,0.423076923 L0.307692308,5.80769231 C0.307692308,8.76923077 2.19230769,9.80769231 4.92307692,9.80769231 C7.65384615,9.80769231 9.53846154,8.76923077 9.53846154,5.80769231 L9.53846154,0.192307692 L7.76923077,0.192307692 C7.65384615,0.192307692 7.53846154,0.269230769 7.53846154,0.423076923 L7.53846154,0.423076923 Z" id="XMLID_243_"></path>
+                                    <path d="M33.2692308,1.73076923 C33.4230769,1.73076923 33.5,1.69230769 33.5384615,1.57692308 L34.0384615,0.307692308 C34.0769231,0.230769231 34.0384615,0.192307692 33.9615385,0.192307692 L26.8076923,0.192307692 C26.1538462,0.192307692 25.8846154,0.384615385 25.8846154,0.846153846 L25.8846154,9.07692308 C25.8846154,9.46153846 26.0769231,9.65384615 26.5769231,9.65384615 L33.2307692,9.65384615 C33.3846154,9.65384615 33.4615385,9.61538462 33.5,9.5 L34,8.23076923 C34.0384615,8.15384615 34,8.11538462 33.9230769,8.11538462 L27.8461538,8.11538462 L27.8461538,6.42307692 C27.8461538,5.84615385 28.1538462,5.57692308 29.0384615,5.57692308 L31.6923077,5.57692308 C31.8461538,5.57692308 31.9230769,5.53846154 31.9615385,5.42307692 L32.4615385,4.19230769 C32.5,4.11538462 32.4615385,4.07692308 32.3846154,4.07692308 L27.8846154,4.07692308 L27.8846154,1.69230769 L33.2692308,1.69230769 L33.2692308,1.73076923 Z" id="XMLID_242_"></path>
+                                    <path d="M20.6923077,4.65384615 C21.4615385,4.23076923 21.7692308,3.5 21.7692308,2.57692308 C21.7692308,0.5 20.0769231,0.192307692 18.3076923,0.192307692 L14.2692308,0.192307692 C13.6153846,0.192307692 13.3461538,0.384615385 13.3461538,0.846153846 L13.3461538,9.07692308 C13.3461538,9.46153846 13.5384615,9.65384615 14.0384615,9.65384615 L19,9.65384615 C20.8846154,9.65384615 22.1923077,8.92307692 22.1923077,7.03846154 C22.2307692,5.88461538 21.7692308,4.92307692 20.6923077,4.65384615 L20.6923077,4.65384615 Z M15.3461538,1.69230769 L18.4615385,1.69230769 C19.5,1.69230769 19.8076923,2.07692308 19.8076923,2.88461538 C19.8076923,3.69230769 19.5,4.07692308 18.4615385,4.07692308 L15.3461538,4.07692308 L15.3461538,1.69230769 L15.3461538,1.69230769 Z M18.8461538,8.11538462 L15.3461538,8.11538462 L15.3461538,6.38461538 C15.3461538,5.80769231 15.6538462,5.53846154 16.5384615,5.53846154 L18.8461538,5.53846154 C19.9615385,5.53846154 20.2692308,5.96153846 20.2692308,6.84615385 C20.2692308,7.73076923 19.9615385,8.11538462 18.8461538,8.11538462 L18.8461538,8.11538462 Z" id="XMLID_238_"></path>
+                                    <path d="M46.4230769,9.5 L44.3076923,5.84615385 C45.3461538,5.57692308 46.2307692,4.88461538 46.2307692,3.11538462 C46.2307692,0.807692308 44.8076923,0.192307692 42.4615385,0.192307692 L38.4230769,0.192307692 C37.7692308,0.192307692 37.5,0.384615385 37.5,0.846153846 L37.5,9.42307692 C37.5,9.53846154 37.6153846,9.65384615 37.7307692,9.65384615 L39.4615385,9.65384615 L39.4615385,6.88461538 C39.4615385,6.30769231 39.7692308,6.03846154 40.6538462,6.03846154 L42.3846154,6.03846154 L44.3076923,9.5 C44.3846154,9.61538462 44.4230769,9.65384615 44.5769231,9.65384615 L46.3846154,9.65384615 C46.4615385,9.65384615 46.4615385,9.53846154 46.4230769,9.5 L46.4230769,9.5 Z M42.7307692,4.57692308 L39.4230769,4.57692308 L39.4230769,1.69230769 L42.7307692,1.69230769 C43.9615385,1.69230769 44.2307692,2.15384615 44.2307692,3.11538462 C44.2307692,4.11538462 43.9615385,4.57692308 42.7307692,4.57692308 L42.7307692,4.57692308 Z" id="XMLID_235_"></path>
+                                </g>
+                                <g id="XMLID_224_" transform="translate(53.846154, 0.000000)" stroke="#57AD56" stroke-width="0.25" fill="#57AD56" sketch:type="MSShapeGroup">
+                                    <path d="M7.30769231,8.80769231 L7.26923077,9.65384615 L0.269230769,9.65384615 L0.269230769,0.192307692 L7,0.192307692 L7.03846154,1.07692308 L1.23076923,1.07692308 L1.23076923,4.34615385 L6.23076923,4.34615385 L6.23076923,5.11538462 L1.23076923,5.11538462 L1.23076923,8.80769231 L7.30769231,8.80769231 L7.30769231,8.80769231 Z" id="XMLID_232_"></path>
+                                    <path d="M18.6923077,7.19230769 L13.1153846,7.19230769 L12.0384615,9.65384615 L11,9.65384615 L15.3846154,0.192307692 L16.5,0.192307692 L20.8461538,9.65384615 L19.7692308,9.65384615 L18.6923077,7.19230769 L18.6923077,7.19230769 Z M15.5,1.80769231 L13.4615385,6.38461538 L18.3076923,6.38461538 L16.3076923,1.80769231 L15.9230769,0.846153846 L15.8846154,0.846153846 L15.5,1.80769231 L15.5,1.80769231 Z" id="XMLID_229_"></path>
+                                    <path d="M27.7692308,1.07692308 L27.7692308,9.65384615 L26.8076923,9.65384615 L26.8076923,1.07692308 L23.2692308,1.07692308 L23.3076923,0.192307692 L31.3461538,0.192307692 L31.3461538,1.07692308 L27.7692308,1.07692308 L27.7692308,1.07692308 Z" id="XMLID_227_"></path>
+                                    <path d="M38.1923077,9.84615385 C36.8846154,9.84615385 35.8461538,9.53846154 35,9.03846154 L35.1538462,8.19230769 C36.0384615,8.69230769 37.0384615,9 38.2307692,9 C40,9 40.9230769,8.19230769 40.9230769,7.03846154 C40.9230769,4.53846154 35.1538462,5.84615385 35.1538462,2.61538462 C35.1538462,1.23076923 36.1923077,0 38.6153846,0 C39.7307692,0 40.7307692,0.192307692 41.5384615,0.576923077 L41.3846154,1.38461538 C40.5,1.03846154 39.6538462,0.846153846 38.6538462,0.846153846 C36.7692308,0.846153846 36.0769231,1.69230769 36.0769231,2.53846154 C36.0769231,4.92307692 41.8461538,3.57692308 41.8461538,6.96153846 C41.8076923,8.65384615 40.5769231,9.84615385 38.1923077,9.84615385 L38.1923077,9.84615385 Z" id="XMLID_225_"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <hr class="hr_1t5XLK">
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul class="list-unstyled">
+                        <li class="align-center"><a href="javascript:void(0);">Brands</a></li>
+                        <li class="align-center"><a href="javascript:void(0);">Gift Certificates</a></li>
+                        <li class="align-center"><a href="javascript:void(0);">Affiliates</a></li>
+                        <li class="align-center"><a href="javascript:void(0);">Specials</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="list-unstyled">
+                        <li class="align-center"><a href="javascript:void(0);"> About UberEATS</a></li>
+                        <li class="align-center"><a href="javascript:void(0);">Become a Delivery Partner</a></li>
+                        <li class="align-center"><a href="javascript:void(0);">Become a Restaurant Partner</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4" @*data-match-height="height-2" style="height: 209px;"*@>
+                    <ul class="list-unstyled">
+                        <li class="align-center"><a href="javascript:void(0);">See all cities</a></li>
+                        <li class="align-center"><a href="javascript:void(0);">Pricing</a></li>
+                        <li class="align-center"><a href="javascript:void(0);">Help</a></li>
+                        <li class="align-center"><a href="javascript:void(0);">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="hr_1t5XLK">
+            <div class="row">
+                <div class="col-sm-12 align-center">
+                    <a class="m-r-25" href="https://195057.measurementapi.com/serve?action=click&amp;publisher_id=195057&amp;site_id=113033">
+                        <img alt="Download on the App Store" width="130" height="39" src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/images/components/app-badge-app-store/Download_on_the_App_Store_Badge_US-UK_135x40-d0558d9106.svg" />
+                    </a>
+                    <a href="https://195057.measurementapi.com/serve?action=click&amp;publisher_id=195057&amp;site_id=116377">
+                        <img alt="Get it on Google Play" height="39" width="130" src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats/static/images/components/app-badge-google-play/en_badge_web_generic-75c31455ae.png" />
+                    </a>
+                </div>
+            </div>
+            <hr class="hr_1t5XLK">
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul class="list-unstyled">
+                        <li class="align-center"><a href="javascript:void(0);">© 2016 Uber Technologies Inc.</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="list-unstyled">
+                        <li class="align-center"><a href="javascript:void(0);">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4" @*data-match-height="height-2" style="height: 209px;"*@>
+                    <ul class="list-unstyled">
+                        <li class="align-center"><a href="javascript:void(0);">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br />
+        </div>
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jsscript")
+    @Scripts.Render("~/bundles/jsmasters")
+    @*@RenderSection("scripts", required: false)*@
+</body>
+</html>

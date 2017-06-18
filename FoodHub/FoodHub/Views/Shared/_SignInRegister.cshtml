@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    @Styles.Render("~/bundles/css_signin")
+</head>
+<body class="login-page">
+    <section class="content-login">
+        <div class="login-box">
+            <div class="logo">
+                <a href="javascript:void(0);">Food<b>HUB</b></a>
+                <small>Search for restaurant or cuisine</small>
+            </div>
+            <div class="card">
+                <div class="body">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jsscript_signin")
+    @Scripts.Render("~/bundles/jsmasters")
+    @*@RenderSection("scripts", required: false)*@
+</body>
+</html>

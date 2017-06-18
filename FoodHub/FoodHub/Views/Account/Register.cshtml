@@ -1,0 +1,102 @@
+﻿@model FoodHub.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_SignInRegister.cshtml";
+}
+
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal field-validate", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="msg">Register a new membership</div>
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="input-group">
+        <span class="input-group-addon">
+            <i class="material-icons">person</i>
+        </span>
+        <div class="form-line">
+            @*<input type="text" class="form-control" name="namesurname" placeholder="Name Surname" required autofocus>*@
+            @Html.TextBoxFor(m => m.NameSurname, new { @class = "form-control", name = "namesurname", required = "required", type = "text", autofocus = "autofocus", placeholder = "Name Surname" })
+        </div>
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">
+            <i class="material-icons">email</i>
+        </span>
+        <div class="form-line">
+            @*<input type="email" class="form-control" name="email" placeholder="Email Address" required>*@
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", name = "email", required = "required", type = "email", placeholder = "Email" })
+        </div>
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">
+            <i class="material-icons">lock</i>
+        </span>
+        <div class="form-line">
+            @*<input type="password" class="form-control" name="password" minlength="6" placeholder="Password" required>*@
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control",  required = "required", type = "password", placeholder = "Password", minlength = "6" })
+        </div>
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">
+            <i class="material-icons">lock</i>
+        </span>
+        <div class="form-line">
+            @*<input type="password" class="form-control" name="confirm" minlength="6" placeholder="Confirm Password" required>*@
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", required = "required", type = "password", placeholder = "Confirm Password", minlength = "6" })
+        </div>
+    </div>
+    @*<div class="form-group">
+        <input type="checkbox" name="terms" id="terms" class="filled-in chk-col-pink">
+        <label for="terms">I read and agree to the <a href="javascript:void(0);">terms of usage</a>.</label>
+    </div>*@
+
+    <button class="btn btn-block btn-lg bg-pink waves-effect" type="submit">Register</button>
+
+    <div class="m-t-25 m-b--5 align-center">
+        @*<a href="sign-in.html">You already have a membership?</a>*@
+        @Html.ActionLink("You already have a membership?", "Login")
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    @*<h4>Create a new account.</h4>
+        <hr />
+        @Html.ValidationSummary("", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="Register" />
+            </div>
+        </div>*@
+}
+
+@*@section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }*@

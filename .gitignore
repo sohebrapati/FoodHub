@@ -1,0 +1,8 @@
+# Exclude DLL files.
+FoodHub/packages
+.vs
+FoodHub/.vs
+FoodHub/FoodHub/obj
+FoodHub/FoodHub/bin
+#FoodHub/FoodHub/node_modules
+#FoodHub/FoodHub/Web*.config
