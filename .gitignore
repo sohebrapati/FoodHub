@@ -6,3 +6,9 @@ FoodHub/FoodHub/obj
 FoodHub/FoodHub/bin
 #FoodHub/FoodHub/node_modules
 #FoodHub/FoodHub/Web*.config
+
+FoodHub/FoodHub.Data/obj
+FoodHub/FoodHub.Data/bin
+
+FoodHub/FoodHub.API/obj
+FoodHub/FoodHub.API/bin

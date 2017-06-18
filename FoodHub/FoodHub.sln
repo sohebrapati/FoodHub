@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodHub", "FoodHub\FoodHub.csproj", "{FE31C3FB-225E-4CEA-BBCB-4362875C851F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodHub.Data", "FoodHub.Data\FoodHub.Data.csproj", "{B50D243C-B60B-4087-93D5-C80CCEABEE1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodHub.API", "FoodHub.API\FoodHub.API.csproj", "{0BA427ED-9899-4186-862D-90F3C48EC6DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{FE31C3FB-225E-4CEA-BBCB-4362875C851F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE31C3FB-225E-4CEA-BBCB-4362875C851F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE31C3FB-225E-4CEA-BBCB-4362875C851F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B50D243C-B60B-4087-93D5-C80CCEABEE1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50D243C-B60B-4087-93D5-C80CCEABEE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50D243C-B60B-4087-93D5-C80CCEABEE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50D243C-B60B-4087-93D5-C80CCEABEE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BA427ED-9899-4186-862D-90F3C48EC6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BA427ED-9899-4186-862D-90F3C48EC6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BA427ED-9899-4186-862D-90F3C48EC6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BA427ED-9899-4186-862D-90F3C48EC6DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
