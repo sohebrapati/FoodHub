@@ -20,6 +20,7 @@ namespace FoodHub.Data.Model
                                 {
                                     CategoryId = mc.CategoryId,
                                     CategoryName = mc.CategoryName,
+                                    DefaultImageURL = mc.DefaultImageURL,
                                     IsActive = mc.IsActive
                                 }).ToList();
 
